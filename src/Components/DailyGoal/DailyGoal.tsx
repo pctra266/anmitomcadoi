@@ -187,7 +187,7 @@ const MainDashboard: React.FC<{ currentUser: string, onLogout: () => void }> = (
       <div className="main-grid">
         <div className="column my-column">
           <div className="column-header">
-            <h3>{getDisplayName(MY_ROLE)} (Tôi)</h3>
+            <h3>{getDisplayName(MY_ROLE)}</h3>
           </div>
           
           <div className="note-board my-note">
