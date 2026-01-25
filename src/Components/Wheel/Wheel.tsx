@@ -88,27 +88,12 @@ const PinkWheel: React.FC = () => {
       {showModal && (
         <div style={styles.overlay}>
           <div style={styles.modalContent}>
-            
-            {isNoodles ? (
-               <>
-                 <h2 style={{ color: '#888', margin: '0 0 10px 0', fontSize: '1.2rem' }}>
-                   Hôm nay em phải nấu:
-                 </h2>
-                 <h1 style={{ color: '#d81b60', fontSize: '2.5rem', margin: '10px 0' }}>
-                   Mỳ tôm 🍜
-                 </h1>
-               </>
-            ) : (
                <>
                   <div style={{opacity: 0.6, transform: 'scale(0.8)', marginBottom: '-10px'}}>
                     <h3 style={{ color: '#888', margin: 0, fontSize: '1rem', textDecoration: 'line-through' }}>
                       Em đã quay vào: {winMessage}
                     </h3>
                   </div>
-
-                  <h2 style={{ color: '#333', margin: '10px 0', fontSize: '1.1rem' }}>
-                    Nhưng mà nấu làm gì giờ này? 
-                  </h2>
                   
                   <div style={{ margin: '15px 0', border: '2px dashed #ff4081', padding: '10px', borderRadius: '15px', backgroundColor: '#fff0f6' }}>
                     <h1 style={{ color: '#d81b60', fontSize: '1rem', margin: '0' }}>
@@ -117,13 +102,11 @@ const PinkWheel: React.FC = () => {
                     <span style={{ fontSize: '3rem' }}>🍜</span>
                   </div>
                </>
-            )}
-
             <button 
               onClick={() => setShowModal(false)}
               style={styles.closeButton}
             >
-              {isNoodles ? 'Tuyệt Vời ❤️' : 'Mỳ tôm thật tuyệt vời ❤️'}
+              {isNoodles ? 'Tuyệt Vời ❤️' : 'Tuyệt Vời ❤️'}
             </button>
           </div>
         </div>
